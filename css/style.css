@@ -1,0 +1,90 @@
+body {
+	font: normal 16px/1.5 "Helvetica", sans-serif;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: bold;
+}
+h2 {
+	font-size: 1.4em;
+	margin-bottom: .5em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+a {
+	color: #000;
+	background: #eee;
+	text-decoration: none;
+}
+a:hover {
+	background: #ddd;
+}
+
+.container {
+	width: 940px;
+	padding: 10px;
+	
+	zoom:1; /*clearfix*/
+}
+.container:after {
+	/* Clearfix */
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#sidebar {
+	position: fixed;
+	width: 300px;
+}
+#content {
+	position: relative;
+	width: 600px;
+	left: 340px;
+}
+
+h1 a {
+	background: none;
+}
+h1 a:hover {
+	background: #none;
+}
+
+#byline {
+	color: #666;
+}
+
+.post {
+	margin-bottom: 8em;
+}
+.post .top {
+	margin-bottom: 1em;
+}
+.post h2, .post .permalink {
+	display: inline;
+}
+.post .permalink {
+	color: #ccc;
+}
+.post .permalink:hover {
+	color: #000;
+}
+.post img {
+	max-width: 600px;
+}
+.post blockquote {
+	border-left: 1px solid #ccc;
+	padding-left: 30px;
+}
+.post ul {
+	list-style-type: disc;
+	margin-left: 40px;
+	margin-bottom: 1em;
+}

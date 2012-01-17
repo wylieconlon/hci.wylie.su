@@ -1,0 +1,13 @@
+<div class="post">
+<div class="top">
+{% if post.title %}
+	<h2>{{ post.title }}</h2>
+{% elsif page.title %}
+	<h2>{{ page.title }}</h2>
+{% endif %}
+	
+	<a class="permalink" href="{{ post.url }}">&para;</a>
+</div>
+
+{{ body }}
+</div>

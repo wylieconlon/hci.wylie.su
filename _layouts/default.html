@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+	
+	<link href="/css/reset.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="/css/style.css" type="text/css" rel="stylesheet" media="screen">
+	
+	<link rel="icon" href="/favicon.png" type="image/png" /> 
+	<link rel="shortcut icon" href="/favicon.png" type="image/png" /> 
+	
+	<title>{{ page.title }}</title>
+</head>
+
+<body>
+
+<div class="container">
+	<div id="sidebar">
+	<h1><a href="/">Human-Computer Interaction</a></h1>
+	
+	<p id="byline">by <a href="http://wylie.su">Wylie Conlon</a></p>
+	
+	<h3>About</h3>
+	<p>
+	This blog documents a course I'm taking in human-computer interaction.
+	</p>
+	
+	<p>
+	It is written in <a href="https://github.com/mojombo/jekyll">Jekyll</a>.
+	</p>
+	
+	<h3>About the Author</h3>
+	<p>
+	I'm a web developer and designer with a focus on building
+	usable interfaces.
+	</p>
+	
+	<ul>
+		{% for tag in site.tags %}
+		<li><a href="/tags/{{ tag | first }}">{{ tag | first | capitalize }}</a></li>
+		{% endfor %}
+	</ul>
+	</div>
+	
+	<div id="content">
+	{{ content }}
+	<div>
+</div>
+
+</body>
+</html>

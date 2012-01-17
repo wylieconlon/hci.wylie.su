@@ -1,0 +1,11 @@
+---
+layout: default
+title: Human Computer Interaction
+---
+
+<div id="posts">
+{% for post in site.posts %}
+	{% assign body = post.content %}
+	{% include post.html %}
+{% endfor %}
+</div>

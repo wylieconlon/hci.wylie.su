@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h2 class="category">{{ page.title }}</h2>
+<div id="posts">
+{% for post in site.tags[page.tag] %}
+	{% capture body %}{{ post.content | markdownify }}{% endcapture %}
+	{% include post.html %}
+{% endfor %}
+</ul>
