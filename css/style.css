@@ -1,5 +1,5 @@
 body {
-	font: normal 16px/1.5 "Helvetica", sans-serif;
+	font: normal 100%/1.5 "Helvetica", sans-serif;
 }
 
 h1 {
@@ -10,8 +10,16 @@ h2 {
 	font-size: 1.4em;
 	margin-bottom: .5em;
 }
+h3 {
+	font-size: 1.2em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1em;
+}
+h4 {
+	margin-bottom: .5em;
+}
 
-p {
+p, hr {
 	margin-bottom: 1em;
 }
 
@@ -22,6 +30,19 @@ a {
 }
 a:hover {
 	background: #ddd;
+}
+
+sup {
+	font-size: .875em;
+	vertical-align: super;
+}
+sup a {
+	background: none;
+}
+
+hr {
+	border: 0;
+	border-bottom: 1px solid #ccc;
 }
 
 .container {
@@ -87,4 +108,9 @@ h1 a:hover {
 	list-style-type: disc;
 	margin-left: 40px;
 	margin-bottom: 1em;
+}
+.post .footnotes {
+	font-size: .875em;
+	list-style-type: decimal;
+	margin-left: 25px;
 }
